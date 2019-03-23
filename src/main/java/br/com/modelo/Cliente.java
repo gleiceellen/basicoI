@@ -57,24 +57,11 @@ public class Cliente {
 
     public void addConta(final Conta conta) {
         // TODO verificar se o cliente já tem uma conta para o mesmo tipo, se tiver lança uma exceção
-    	if(this.getContaPorTipo(conta.getTipoConta())==null) {
-    		throw new IllegalArgumentException("O cliente já possui uma conta desse tipo!");
-    	}
-        this.getContas().add(conta);
+
     }
 
     public Conta getContaPorTipo(TipoConta tipoConta) {
         // TODO obter a conta por tipo, pode fazer um forEach ou trabalhar com Stream com Java8
-    	
-    	List<Conta> contas = (List<Conta>) this.getContas();
-    	for( Conta c : contas ) {
-    		if(c.getTipoConta() == tipoConta) {
-    			return c;
-    		} else {
-    			System.out.println("Não existe conta com esse tipo!");
-    			return null;
-    		}
-    	}
-		return null;
+        return null;
     }
 }

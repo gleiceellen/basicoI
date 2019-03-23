@@ -3,7 +3,7 @@ package br.com.modelo;
 public enum TipoConta {
 
     CONTA_CORRENT("Conta Corrente"),
-    POUNPANCA("Poupança");
+    POUPANCA("Poupança");
     // TODO será que pode ter mais tipos de contas ?
 
     private String tipoConta;
