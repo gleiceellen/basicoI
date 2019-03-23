@@ -12,7 +12,6 @@ public class Transacao {
     private Double valorTransacao;
 
     public Transacao(Conta contaPagadora, Conta contaRecebedora, Double valorTransacao) {
-        this.id = Long.parseLong(UUID.randomUUID().toString());
         this.contaPagadora = contaPagadora;
         this.contaRecebedora = contaRecebedora;
         this.dataTransacao = LocalDateTime.now();
